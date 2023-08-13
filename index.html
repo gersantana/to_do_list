@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>ToDo List</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="cabezera">
+				<h1>ToDo List</h1>
+				<h2>HOLA, <span id="tu_nombre"></span>.</h2>
+				<h3>Es hora de ir cumpliendo tus metas... A por ellas!!</h3>
+			</header>
+
+			<section class="input_sec">
+				<label for="input_list">Nueva Tarea</label>
+				<input id="input_list" type="text" placeholder="Ingresa una Tarea" />
+				<button id="btn_ageragar" type="submit">Agregar</button>
+			</section>
+
+			<section class="totales">
+				<p>Tareas Totales: <span id="total_tareas">0</span></p>
+
+				<p>Tareas Finalizadas: <span id="total_finalizadas">0</span></p>
+			</section>
+
+			<section class="lista_tarea">
+				<table border="solid">
+					<thead>
+						<th>ID</th>
+						<th>Tarea</th>
+						<th>Check</th>
+						<th>Delete</th>
+					</thead>
+					<tbody id="tareas_agregadas">
+						<!-- <tr>
+                        <td><p id="identificador">00</p></td>
+                        <td><p id="tarea">pasear al perro</p></td>
+                        <td><input id="check" type="checkbox" name="" id="" /></td>
+                        <td><button id="eliminar" type="submit">Eliminar</button></td>
+                    </tr> -->
+					</tbody>
+				</table>
+			</section>
+		</div>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
