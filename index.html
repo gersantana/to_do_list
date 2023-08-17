@@ -11,23 +11,23 @@
 			<div class="container_sec1">
 				<header class="cabezera">
 					<h1>ToDo List</h1>
-					<h2>HOLA <span id="tu_nombre"></span>.</h2>
+					<h2>Hola!<span id="tu_nombre"></span></h2>
 					<h3>Es hora de ir cumpliendo tus metas... A por ellas!!</h3>
 				</header>
 
 				<section class="input_sec">
 					<label for="input_list">Nueva Tarea</label>
 					<input id="input_list" type="text" placeholder="Ingresa una Tarea" />
-				    <button id="btn_agregar" type="submit">Agregar</button>
+					<button id="btn_agregar" type="submit">Agregar</button>
 				</section>
 
 				<section class="totales">
 					<p>Tareas Totales: <span id="total_tareas">0</span></p>
-					<p>Tareas Finalizadas: <span id="total_finalizadas">0</span></p>
+					<p>Tareas Finalizadas: <span id="total_finalizadas"></span></p>
 				</section>
 			</div>
 			<section class="lista_tarea container_center">
-				<table class="container_center" border>
+				<table id="tableet" class="container_center table">
 					<thead>
 						<th>ID</th>
 						<th>Tarea</th>
@@ -36,12 +36,11 @@
 					</thead>
 					<tbody id="tareas_agregadas">
 						<tr class="ajap">
-                            <td><p id="identificador">1</p></td>
-                            <td><p id="tarea"></p></td>
-                            <td><input class="check" type="checkbox" name="" id="" /></td>
-                            <td><button class="btn_eliminar" id="eliminar" type="submit">Eliminar</button></td>
-                        </tr>
-						
+							<td><p id="identificador">1</p></td>
+							<td><p id="tarea"></p></td>
+							<td><input class="check" type="checkbox" name="" id="" /></td>
+							<td><button class="btn_eliminar" id="eliminar" type="submit">Eliminar</button></td>
+						</tr>
 					</tbody>
 				</table>
 			</section>
