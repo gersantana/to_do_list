@@ -111,6 +111,10 @@ body {
 	padding: 0.5rem;
 }
 
+#tableet p {
+	margin: 0;
+}
+
 .totales p {
 	font-size: 1.7rem;
 	font-weight: bold;

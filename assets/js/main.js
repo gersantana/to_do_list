@@ -1,47 +1,11 @@
 let nombre = prompt(`Hola cual es tu nombre`)
 const imprimirNombre = document.getElementById("tu_nombre")
 
-if(nombre){
-  imprimirNombre.innerHTML = (` ${nombre}.`).toUpperCase()
-}else{
-  imprimirNombre.innerHTML = " Usuario."
+if (nombre) {
+    imprimirNombre.innerHTML = (` ${nombre}.`).toUpperCase()
+} else {
+    imprimirNombre.innerHTML = " Usuario."
 }
-
-// const tareaInput = document.getElementById("input_list")
-// const btnAgregarTarea = document.getElementById("btn_agregar")
-
-// const tareasTotales = document.getElementById("total_tareas")
-// const tareasFinalizadas = document.getElementById("total_finalizadas")
-
-// const listaDeTareas = document.getElementById("tareas_agregadas")
-// const iterarTareas = () => {
-//     let html = ""
-//     for(let tarea of tareas ) {
-//         html += `<tr >
-//                     <td><p id="identificador">00</p></td>
-//                     <td><p id="tarea"> ${tarea} </p></td>
-//                     <td><input class="check" type="checkbox" name="" id="" /></td>
-//                     <td><button class="btn_eliminar" id="eliminar" type="submit">Eliminar</button></td>
-//                 </tr>`
-//                 listaDeTareas.innerHTML = html;
-//     }
-// }
-
-// const tareas = []
-// btnAgregarTarea.addEventListener("click", ()=> {
-//     if (tareaInput.value === ""){
-//         alert(`Debes llenar el campo correspondiente`)
-//     }else {
-//         const nuevaTarea = tareaInput.value
-//         tareas.push(nuevaTarea)
-//         tareaInput.value = ""
-    
-//         iterarTareas()
-       
-//         tareasTotales.innerHTML = tareas.length
-//     }
-
-// })
 
 
 const tareaInput = document.getElementById("input_list");
@@ -52,7 +16,11 @@ const tareasFinalizadas = document.getElementById("total_finalizadas");
 
 const listaDeTareas = document.getElementById("tareas_agregadas");
 
-const tareas = [];
+const tareas = [
+                { i: 1, nombre: "Limpiar", checkbox: false },
+                { i: 1, nombre: "Cocinar", checkbox: false },
+                { i: 1, nombre: "Bañar al perro", checkbox: false }
+            ];
 
 const iterarTareas = () => {
     let html = "";
