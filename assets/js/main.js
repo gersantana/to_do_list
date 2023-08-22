@@ -17,9 +17,9 @@ const tareasFinalizadas = document.getElementById("total_finalizadas");
 const listaDeTareas = document.getElementById("tareas_agregadas");
 
 const tareas = [
-                { i: 1, nombre: "Limpiar", checkbox: false },
-                { i: 1, nombre: "Cocinar", checkbox: false },
-                { i: 1, nombre: "Bañar al perro", checkbox: false }
+                { nombre: "Limpiar", finalizada: false},
+                { nombre: "Cocinar", finalizada: false },
+                { nombre: "Bañar al perro", finalizada: false }
             ];
 
 const iterarTareas = () => {
@@ -28,7 +28,7 @@ const iterarTareas = () => {
         const tarea = tareas[i];
         const tareaId = `tarea_${i}`;
         html += `<tr>
-                    <td><p class="identificador">${i + 1}</p></td>
+                    <td><p class="identificador">${i +1}</p></td>
                     <td><p class="tarea">${tarea.nombre}</p></td>
                     <td><input class="check" type="checkbox" name="${tareaId}" id="${tareaId}" ${tarea.finalizada ? 'checked' : ''} /></td>
                     <td><button class="btn_eliminar" type="button" data-id="${i}">Eliminar</button></td>
